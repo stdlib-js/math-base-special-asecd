@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import asecd from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asecd@deno/mod.js';
+import asecd from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asecd@v0.1.0-deno/mod.js';
 ```
 
 #### asecd( x )
@@ -82,7 +82,7 @@ v = asecd( NaN );
 
 ```javascript
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@deno/mod.js';
-import asecd from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asecd@deno/mod.js';
+import asecd from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-asecd@v0.1.0-deno/mod.js';
 
 var x = linspace( -1.0, 1.0, 100 );
 
