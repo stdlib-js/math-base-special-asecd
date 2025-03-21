@@ -99,15 +99,15 @@ v = asecd( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array-base-linspace' );
+var uniform = require( '@stdlib/random-array-uniform' );
+var logEachMap = require( '@stdlib/console-log-each-map' );
 var asecd = require( '@stdlib/math-base-special-asecd' );
 
-var x = linspace( -1.0, 1.0, 100 );
+var x = uniform( 100, -10.0, 10.0, {
+    'dtype': 'float64'
+});
 
-var i;
-for ( i = 0; i < x.length; i++ ) {
-    console.log( asecd( x[ i ] ) );
-}
+logEachMap( 'asecd(%0.4f) = %0.4f', x, asecd );
 ```
 
 </section>
@@ -245,7 +245,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
